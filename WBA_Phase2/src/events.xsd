@@ -2,6 +2,8 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name="kategorie">
+<xs:complexType>
+<xs:sequence>
 
 	<xs:element name="event">
 		<xs:complexType>
@@ -20,16 +22,17 @@
 					</xs:complexType>
 				</xs:element>
 				
-				<xs:element name="preis" type="string"></xs:element>
+				<xs:element name="preis" type="xs:string"></xs:element>
 				<xs:element name="datum" type="xs:date"></xs:element>
 				<xs:element name="startzeit" type="xs:time"></xs:element>
 				<xs:element name="personen_min" type="xs:integer"></xs:element>
 				<xs:element name="personen_max" type="xs:integer"></xs:element>
 				<xs:element name="beschreibung" type="xs:string"></xs:element>
 							
-		</xs:sequence>
-			
-				
+			</xs:sequence>	
 		</xs:complexType>
 	</xs:element>
+	</xs:sequence>
+	</xs:complexType>
 </xs:element>
+</xs:schema>
