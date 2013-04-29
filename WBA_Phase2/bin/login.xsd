@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="login">
+
+	<xs:element name="email" type="emailAddress"></xs:element>
+	
+	<xsd:simpleType name="emailAddress"> 
+  		<xsd:restriction base="xsd:string"> 
+   			<xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+   		</xsd:restriction> 
+  	</xsd:simpleType>	
+		
+	<xs:element name="password"></xs:element>
+	
+</xs:element>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="personen">
+
+	<xs:element name="person">
+	<xs:element name="id" type="xs:ID" ></xs:element>
+		<xs:complexType>
+			<xs:sequence>
+
+				<xs:element name="geschlecht" type="geschlechtType"/>
+					<xs:simpleType name="geschlechtType">
+						<xs:restriction base="xs:string">
+						    <xs:enumeration value="Frau"/>
+						    <xs:enumeration value="Mann"/>
+						</xs:restriction>
+					</xs:simpleType>
+
+				<xs:element name="vorname" type="xs:string"></xs:element>
+				<xs:element name="nachname" type="xs:string"></xs:element>
+				<xs:element name="geburtsdatum" type="xs:date"></xs:element>
+				<xs:element name="email" type="emailAddress"></xs:element>
+				<xs:element name="telefonnummer" type="xs:string"></xs:element>
+				
+				<xsd:simpleType name="emailAddress"> 
+  			 		<xsd:restriction base="xsd:string"> 
+   				   		<xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+   					</xsd:restriction> 
+  				</xsd:simpleType>	
+				
+				<xs:element name="anschrift">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="strasse" type="xs:string"></xs:element>
+							<xs:element name="plz" type="xs:string"></xs:element>
+							<xs:element name="ortsname" type="xs:string"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="interesse">
+					<xs:sequence>
+						<xs:element name="kategorie"></xs:element>
+					</xs:sequence>
+				</xs:element>
+							
+			</xs:sequence>
+			
+		</xs:complexType>
+	</xs:element>
+</xs:element>

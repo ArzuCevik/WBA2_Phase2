@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<personen>
+	<person>
+		<id>1</id>		
+		<geschlecht>Mann</geschlecht>			
+		<vorname>Max</vorname>
+		<nachname>Mustermann</nachname>
+		<geburtsdatum>03.06.1986</geburtsdatum>
+		<emailadresse>max@mustermann.de</emailadresse>
+		<teleonnummer>02261-54678</teleonnummer>
+		<anschrift>
+			<strasse>Mustermannstr. 9</strasse>
+			<plz>51643</plz>
+			<ortsname>Gummersbach</ortsname>
+		</anschrift>
+		<interesse>
+			<kategorie>Wassersport</kategorie>
+			<kategorie>Freizeit</kategorie>
+			<kategorie>Tennis</kategorie>
+		</interesse>
+	</person>
+
+</personen>

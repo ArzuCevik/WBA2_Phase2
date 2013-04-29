@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="kategorie">
+
+	<xs:element name="event">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:ID" ></xs:element>
+				<xs:element name="titel" type="xs:string"></xs:element>
+				<xs:element name="autor" type="xs:string"></xs:element>
+
+				<xs:element name="ort">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="strasse" type="xs:string"></xs:element>
+							<xs:element name="plz" type="xs:string"></xs:element>
+							<xs:element name="ortsname" type="xs:string"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="preis" type="string"></xs:element>
+				<xs:element name="datum" type="xs:date"></xs:element>
+				<xs:element name="startzeit" type="xs:time"></xs:element>
+				<xs:element name="personen_min" type="xs:integer"></xs:element>
+				<xs:element name="personen_max" type="xs:integer"></xs:element>
+				<xs:element name="beschreibung" type="xs:string"></xs:element>
+							
+		</xs:sequence>
+			
+				
+		</xs:complexType>
+	</xs:element>
+</xs:element>

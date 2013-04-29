@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<kategorie name="Wassersport">
+
+<event>
+	<id>1</id>
+	<titel>Boot fahren auf der Aggertalsperre</titel>
+	<autor>Max</autor>
+	<ort>
+		<strasse>Aggertal</strasse>
+		<plz>51643</plz>
+		<ortsname>Gummersbach</ortsname>
+	</ort>
+	<preis>20</preis>
+	<datum>22.06.2013</datum>
+	<startuhrzeit>10:00 Uhr</startuhrzeit>
+	<personen_min>4</personen_min>
+	<personen_max>8</personen_max>
+	<beschreibung>
+	Hallo Leute!
+	Ich hätte so richtig Bock bei schönen Wetter Boot zu fahren. 
+	Ich habe einen Führerschein und habe auch schon ein Boot reserviert.
+	Wäre schön, wenn wir uns um 10:00 Uhr dort treffen könnten.
+	
+	Viele Grüße
+	
+	Max
+	</beschreibung>
+</event>
+
+</<kategorie>>
